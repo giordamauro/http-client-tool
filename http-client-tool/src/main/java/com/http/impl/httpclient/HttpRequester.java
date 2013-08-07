@@ -2,6 +2,7 @@ package com.http.impl.httpclient;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.net.URI;
 import java.net.URLEncoder;
 import java.util.List;
 import java.util.Map;
@@ -137,10 +138,10 @@ public class HttpRequester {
 			List<String> queryParameters = queryParams.getParameterKeys();
 			for (String queryParam : queryParameters) {
 				String urlKey = URLEncoder.encode(queryParam, "UTF-8");
-
 				List<String> values = queryParams.getParameterValues(queryParam);
 				for (String value : values) {
-					urlQueryParams += urlKey + "=" + URLEncoder.encode(value, "UTF-8") + "&";
+					String urlValue = URLEncoder.encode(value, "UTF-8");
+					urlQueryParams += urlKey + "=" + urlValue + "&";
 				}
 			}
 			String fixedQueryUrl = urlQueryParams.substring(0, urlQueryParams.length() - 1);
@@ -148,32 +149,34 @@ public class HttpRequester {
 			return fixedQueryUrl;
 
 		} catch (UnsupportedEncodingException e) {
-			throw new IllegalStateException("Couldn't get url query params", e);
+			throw new IllegalStateException(e);
 		}
 	}
 
 	private HttpRequestBase getBaseRequestFromMethod(HttpMethod method, String basePath) {
 		HttpRequestBase httpRequest = null;
 
+		URI uri = URI.create(basePath);
+
 		switch (method) {
 		case OPTIONS:
-			httpRequest = new HttpOptions(basePath);
+			httpRequest = new HttpOptions(uri);
 			break;
 
 		case GET:
-			httpRequest = new HttpGet(basePath);
+			httpRequest = new HttpGet(uri);
 			break;
 
 		case DELETE:
-			httpRequest = new HttpDelete(basePath);
+			httpRequest = new HttpDelete(uri);
 			break;
 
 		case POST:
-			httpRequest = new HttpPost(basePath);
+			httpRequest = new HttpPost(uri);
 			break;
 
 		case PUT:
-			httpRequest = new HttpPut(basePath);
+			httpRequest = new HttpPut(uri);
 			break;
 
 		default:

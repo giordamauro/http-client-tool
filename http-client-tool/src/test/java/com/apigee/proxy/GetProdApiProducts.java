@@ -12,7 +12,7 @@ public class GetProdApiProducts {
 
 	public static void main(String[] args) {
 
-		final String organization = "ecollege";
+		final String organization = "mgiorda";
 		final String username = "mgiorda@apigee.com";
 		final String password = "1234321Nomejodas";
 

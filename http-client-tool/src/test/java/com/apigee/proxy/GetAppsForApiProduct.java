@@ -12,8 +12,8 @@ public class GetAppsForApiProduct {
 
 	public static void main(String[] args) {
 
-		final String organization = "ecollege";
-		final String username = "mgiorda@apigee.com";
+		final String organization = "mgiorda";
+		final String username = "mgiorda@devspark.com";
 		final String password = "1234321Nomejodas";
 		final String apiProductName = "betami";
 

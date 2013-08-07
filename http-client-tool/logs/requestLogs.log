@@ -6989,3 +6989,834 @@
   "scopes" : [ ],
   "status" : "approved"
 }'
+2013-08-07 13:30:21,314 INFO - Invoking service method: 'ApigeeAPI.getApps()'
+2013-08-07 13:30:21,346 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:23,402 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:21 GMT, Content-Length=922, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:23,409 INFO - Parsing json: '[ "ca6a7f09-d339-491b-8b0d-3bd4866aab6f", "68321263-f5da-443f-b692-a8f4430dfca2", "0ddf9bde-ffa2-46f2-8dbe-7c3393a1b543", "d6590f7d-ebe6-4207-8d02-3955a23fb88c", "b267c882-343b-4d75-806a-1939eb6ee811", "fc6b5ae7-ff19-4355-a563-2bc3ce977532", "7ab37147-529b-4766-9163-5baaa20c8c58", "42abd595-0dd1-4194-a725-29f55afee879", "4b762724-f406-4deb-82ae-f95d63a97ebd", "bc1ed501-a24d-4137-96a5-c28955b4afad", "724e076b-504d-4cee-a4d6-dc84cb5451c7", "fd4b7a87-1f13-4805-ad1a-3c92cd68b2fc", "2d4c7e9b-5ad8-4a5d-8a18-0fe18b5f8552", "893e0ae9-3c63-4cfc-b32c-0ad01d689cbf", "7183607b-97b3-4839-9190-f3abbfcd761f", "22c769d9-108f-4ab3-bb43-5891a2ecf14f", "e66a86b8-6d15-4066-80bf-891eb9d866a6", "f9ca9832-fca0-49c6-9edc-1d8f70bfbf8f", "b5fb8b16-4d98-4ba7-8d2a-3463ccf62bc0", "9d7afe57-f9fc-43dd-8056-359f2a1f61b2", "a1876eba-553b-4f02-96bd-6a771301c996", "9fda72d2-b3fe-4047-9b39-e184c6e94f21", "a7896679-37c2-4872-a0ce-ae56089a8de9" ]'
+2013-08-07 13:30:23,452 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:23,455 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/ca6a7f09-d339-491b-8b0d-3bd4866aab6f" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:23,720 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:21 GMT, Content-Length=811, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:23,721 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "ca6a7f09-d339-491b-8b0d-3bd4866aab6f",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "tesla@weathersample.com"
+  } ],
+  "callbackUrl" : "miCallbackurl.com",
+  "createdAt" : 1374010202988,
+  "createdBy" : "mgiorda@devspark.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "emptyproduct",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "pdYekZcF2TLLT46Zcbx2aBDW2NlDYVbL",
+    "consumerSecret" : "hmsRhCSqrJNwPJas",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "Yvlkhf3SK9pvbw3a",
+  "lastModifiedAt" : 1375114296122,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "MyTestApp",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-08-07 13:30:23,744 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:23,745 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/68321263-f5da-443f-b692-a8f4430dfca2" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:24,002 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:22 GMT, Content-Length=742, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:24,003 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "68321263-f5da-443f-b692-a8f4430dfca2",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "mgiorda@devspark.com"
+  } ],
+  "callbackUrl" : "miCallbackurl.com",
+  "createdAt" : 1373903528883,
+  "createdBy" : "mgiorda@devspark.com",
+  "credentials" : [ {
+    "apiProducts" : [ ],
+    "attributes" : [ ],
+    "consumerKey" : "c5h2B4Dh9JKnxqyRFWA5wf2MfRw8sQa3",
+    "consumerSecret" : "XjBE73ZCosxMWQdx",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZKncooWVWCSqGXkV",
+  "lastModifiedAt" : 1375114286423,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "TestDeveloperApp",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-08-07 13:30:24,007 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:24,009 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/0ddf9bde-ffa2-46f2-8dbe-7c3393a1b543" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:24,250 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:22 GMT, Content-Length=735, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:24,250 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "0ddf9bde-ffa2-46f2-8dbe-7c3393a1b543",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "mgiorda@devspark.com"
+  } ],
+  "callbackUrl" : "miCallbackurl.com",
+  "createdAt" : 1373907074449,
+  "createdBy" : "mgiorda@devspark.com",
+  "credentials" : [ {
+    "apiProducts" : [ ],
+    "attributes" : [ ],
+    "consumerKey" : "FMl2mcqJxi9DnGNdyD2wXkGlb78xhhgV",
+    "consumerSecret" : "0rDrKKzUk3pA9cgL",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZKncooWVWCSqGXkV",
+  "lastModifiedAt" : 1375114276847,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "newDevApp",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-08-07 13:30:24,253 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:24,254 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/d6590f7d-ebe6-4207-8d02-3955a23fb88c" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:24,482 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:22 GMT, Content-Length=895, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:24,482 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "d6590f7d-ebe6-4207-8d02-3955a23fb88c",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "mgiorda@devspark.com"
+  } ],
+  "callbackUrl" : "miCallbackurl.com",
+  "createdAt" : 1374607327638,
+  "createdBy" : "mgiorda@devspark.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "PremiumWeatherAPI",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "apikeyverification",
+      "status" : "pending"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "NL17oxnaPYcu4LaW5DmLuyuhEzRkMKvA",
+    "consumerSecret" : "6969bgOg6bgYAM50",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZKncooWVWCSqGXkV",
+  "lastModifiedAt" : 1375114279773,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "NewBrokenApp",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-08-07 13:30:24,485 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:24,487 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/b267c882-343b-4d75-806a-1939eb6ee811" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:24,764 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:22 GMT, Content-Length=732, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:24,765 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "b267c882-343b-4d75-806a-1939eb6ee811",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "mgiorda@devspark.com"
+  } ],
+  "callbackUrl" : "miCallbackurl.com",
+  "createdAt" : 1374690178042,
+  "createdBy" : "mgiorda@devspark.com",
+  "credentials" : [ {
+    "apiProducts" : [ ],
+    "attributes" : [ ],
+    "consumerKey" : "NUseG5q1Ayj2cUWqV8gWTtB9oJjTAsjc",
+    "consumerSecret" : "YJBLyDucRKJZOfgD",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZKncooWVWCSqGXkV",
+  "lastModifiedAt" : 1375114283166,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "Broken",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-08-07 13:30:24,768 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:24,776 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/fc6b5ae7-ff19-4355-a563-2bc3ce977532" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:25,005 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:23 GMT, Content-Length=734, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:25,006 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "fc6b5ae7-ff19-4355-a563-2bc3ce977532",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "mgiorda@devspark.com"
+  } ],
+  "callbackUrl" : "miCallbackurl.com",
+  "createdAt" : 1370889990998,
+  "createdBy" : "mgiorda@devspark.com",
+  "credentials" : [ {
+    "apiProducts" : [ ],
+    "attributes" : [ ],
+    "consumerKey" : "tDXR9zVBvIjiwzVG8gwALj0nomykwPtZ",
+    "consumerSecret" : "gBoYUAoH9CpEA9AR",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZKncooWVWCSqGXkV",
+  "lastModifiedAt" : 1375114274339,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "OAuthApp",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-08-07 13:30:25,008 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:25,009 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/7ab37147-529b-4766-9163-5baaa20c8c58" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:25,252 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:23 GMT, Content-Length=827, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:25,253 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "7ab37147-529b-4766-9163-5baaa20c8c58",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "mgiorda@devspark.com"
+  } ],
+  "callbackUrl" : "miCallbackurl.com",
+  "createdAt" : 1371499876474,
+  "createdBy" : "mgiorda@devspark.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "standard_developer",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "8UgiAQBEpvLEku2aIkgi2vTNmIkpZs7K",
+    "consumerSecret" : "l0vVxw200ip870mb",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZKncooWVWCSqGXkV",
+  "lastModifiedAt" : 1375114285625,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "Rhapsody-Standard-Labs",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-08-07 13:30:25,254 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:25,255 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/42abd595-0dd1-4194-a725-29f55afee879" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:25,512 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:23 GMT, Content-Length=1087, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:25,512 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "42abd595-0dd1-4194-a725-29f55afee879",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "mgiorda@devspark.com"
+  } ],
+  "callbackUrl" : "miCallbackurl.com",
+  "createdAt" : 1373471529227,
+  "createdBy" : "mgiorda@devspark.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "emptyproduct",
+      "status" : "pending"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "5fhQHLUx5mDR2YSuZRiM4QchgnuMQIj7",
+    "consumerSecret" : "GJaG7mEdFfKJqTkY",
+    "scopes" : [ ],
+    "status" : "approved"
+  }, {
+    "apiProducts" : [ {
+      "apiproduct" : "emptyproduct",
+      "status" : "pending"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "oCo7kYiqtqpz31fWiSNTjGYa5aDiSziX",
+    "consumerSecret" : "fAVLEhAKS2HILjQW",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZKncooWVWCSqGXkV",
+  "lastModifiedAt" : 1375114276289,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "MyUltimateNewApp",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-08-07 13:30:25,516 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:25,517 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/4b762724-f406-4deb-82ae-f95d63a97ebd" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:25,745 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:23 GMT, Content-Length=737, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:25,747 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "4b762724-f406-4deb-82ae-f95d63a97ebd",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "mgiorda@devspark.com"
+  } ],
+  "callbackUrl" : "miCallbackurl.com",
+  "createdAt" : 1373916924860,
+  "createdBy" : "mgiorda@devspark.com",
+  "credentials" : [ {
+    "apiProducts" : [ ],
+    "attributes" : [ ],
+    "consumerKey" : "ZdclaahIbSs65v7TYugjxLhHA2A8T4XG",
+    "consumerSecret" : "C0MkdcCDUEF5eBBo",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZKncooWVWCSqGXkV",
+  "lastModifiedAt" : 1375114281444,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "UltimateApp",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-08-07 13:30:25,749 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:25,750 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/bc1ed501-a24d-4137-96a5-c28955b4afad" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:26,015 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:24 GMT, Content-Length=736, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:26,016 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "bc1ed501-a24d-4137-96a5-c28955b4afad",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "mgiorda@devspark.com"
+  } ],
+  "callbackUrl" : "miCallbackurl.com",
+  "createdAt" : 1371653811280,
+  "createdBy" : "mgiorda@devspark.com",
+  "credentials" : [ {
+    "apiProducts" : [ ],
+    "attributes" : [ ],
+    "consumerKey" : "jVrjTVLodOyN6mrFL0KhcEQ1Vtrab1EG",
+    "consumerSecret" : "wOtAqaBXyr8JEgvr",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZKncooWVWCSqGXkV",
+  "lastModifiedAt" : 1375114277449,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "MyTestApp2",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-08-07 13:30:26,018 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:26,020 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/724e076b-504d-4cee-a4d6-dc84cb5451c7" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:26,249 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:24 GMT, Content-Length=734, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:26,250 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "724e076b-504d-4cee-a4d6-dc84cb5451c7",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "mgiorda@devspark.com"
+  } ],
+  "callbackUrl" : "miCallbackurl.com",
+  "createdAt" : 1373471339271,
+  "createdBy" : "mgiorda@devspark.com",
+  "credentials" : [ {
+    "apiProducts" : [ ],
+    "attributes" : [ ],
+    "consumerKey" : "rhSCE4Lu99d2wCLQXkL4vVul4tp7Zpkj",
+    "consumerSecret" : "5V8YBjLN5NlUGKlq",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZKncooWVWCSqGXkV",
+  "lastModifiedAt" : 1375114275069,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "MyNewApp",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-08-07 13:30:26,253 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:26,254 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/fd4b7a87-1f13-4805-ad1a-3c92cd68b2fc" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:26,490 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:24 GMT, Content-Length=820, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:26,491 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "fd4b7a87-1f13-4805-ad1a-3c92cd68b2fc",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "tesla@weathersample.com"
+  } ],
+  "callbackUrl" : "miCallbackurl.com",
+  "createdAt" : 1374009324785,
+  "createdBy" : "mgiorda@devspark.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "PremiumWeatherAPI",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "htV6EipR2nUbjZUeMsCTIRKdFYIAgUmu",
+    "consumerSecret" : "GswnI4Aj9rkVO1GA",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "Yvlkhf3SK9pvbw3a",
+  "lastModifiedAt" : 1375114319443,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "NewAppTestapp",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-08-07 13:30:26,494 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:26,496 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/2d4c7e9b-5ad8-4a5d-8a18-0fe18b5f8552" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:26,730 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:24 GMT, Content-Length=807, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:26,731 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "2d4c7e9b-5ad8-4a5d-8a18-0fe18b5f8552",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "mgiorda@devspark.com"
+  } ],
+  "callbackUrl" : "miCallbackurl.com",
+  "createdAt" : 1370357880106,
+  "createdBy" : "adminui@apigee.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "tutorial_product",
+      "status" : "revoked"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "FUdCgQIxZ24VClOYUCUHGOpEF1NjSddS",
+    "consumerSecret" : "nCIXXjdg94odDGTE",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZKncooWVWCSqGXkV",
+  "lastModifiedAt" : 1375114278696,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "testapp",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-08-07 13:30:26,734 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:26,735 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/893e0ae9-3c63-4cfc-b32c-0ad01d689cbf" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:26,957 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:25 GMT, Content-Length=807, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:26,958 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "893e0ae9-3c63-4cfc-b32c-0ad01d689cbf",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "mgiorda@devspark.com"
+  } ],
+  "callbackUrl" : "miCallbackurl.com",
+  "createdAt" : 1371656386272,
+  "createdBy" : "mgiorda@devspark.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "emptyproduct",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "mMwVVsNd039czWOTStqzApsMCbXfuGby",
+    "consumerSecret" : "ltsvR32j1XwByzAm",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZKncooWVWCSqGXkV",
+  "lastModifiedAt" : 1375114282616,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "MyTestApp",
+  "scopes" : [ ],
+  "status" : "revoked"
+}'
+2013-08-07 13:30:26,961 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:26,962 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/7183607b-97b3-4839-9190-f3abbfcd761f" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:27,220 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:25 GMT, Content-Length=896, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:27,220 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "7183607b-97b3-4839-9190-f3abbfcd761f",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "mgiorda@devspark.com"
+  } ],
+  "callbackUrl" : "miCallbackurl.com",
+  "createdAt" : 1371499514027,
+  "createdBy" : "mgiorda@devspark.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "premium_developer",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "standard_developer",
+      "status" : "revoked"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "qte9ueGVXeEE8y0aH463MU58QyaSXQ1r",
+    "consumerSecret" : "Cc8mkrpM0IhtFaPZ",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZKncooWVWCSqGXkV",
+  "lastModifiedAt" : 1375114284983,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "Rhapsody-Labs",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-08-07 13:30:27,222 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:27,222 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/22c769d9-108f-4ab3-bb43-5891a2ecf14f" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:27,464 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:25 GMT, Content-Length=809, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:27,465 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "22c769d9-108f-4ab3-bb43-5891a2ecf14f",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "mgiorda@devspark.com"
+  } ],
+  "callbackUrl" : "miCallbackurl.com",
+  "createdAt" : 1371569263223,
+  "createdBy" : "mgiorda@devspark.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "emptyproduct",
+      "status" : "revoked"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "nRU0UgWFEGBUX9KOs34WoojcxfrbKZSV",
+    "consumerSecret" : "iCg2G1QvmtTHBAgX",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZKncooWVWCSqGXkV",
+  "lastModifiedAt" : 1375114284386,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "NotEmptyApp",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-08-07 13:30:27,468 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:27,469 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/e66a86b8-6d15-4066-80bf-891eb9d866a6" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:27,716 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:25 GMT, Content-Length=765, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:27,716 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "e66a86b8-6d15-4066-80bf-891eb9d866a6",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "App con espacio"
+  }, {
+    "name" : "Notes"
+  } ],
+  "callbackUrl" : "www.callback.com",
+  "createdAt" : 1375138366892,
+  "createdBy" : "mgiorda@devspark.com",
+  "credentials" : [ {
+    "apiProducts" : [ ],
+    "attributes" : [ ],
+    "consumerKey" : "9tYz1Zl0EfTGyRpqh1w8LUxmNAQCdOZ5",
+    "consumerSecret" : "D1ZcA0XKnHEtGNE6",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZKncooWVWCSqGXkV",
+  "lastModifiedAt" : 1375138366892,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "App-con-espacio",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-08-07 13:30:27,720 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:27,721 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/f9ca9832-fca0-49c6-9edc-1d8f70bfbf8f" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:27,991 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:26 GMT, Content-Length=821, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:27,992 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "f9ca9832-fca0-49c6-9edc-1d8f70bfbf8f",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "tesla@weathersample.com"
+  } ],
+  "callbackUrl" : "miCallbackurl.com",
+  "createdAt" : 1370288747602,
+  "createdBy" : "noreply_admin@apigee.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "PremiumWeatherAPI",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "SXB2BjyekTVuwYAs8RZgAkAuVIXM6u48",
+    "consumerSecret" : "AgQ3CiX0hAqenLZZ",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "Yvlkhf3SK9pvbw3a",
+  "lastModifiedAt" : 1375114312566,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "weatherapp",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-08-07 13:30:27,995 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:27,996 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/b5fb8b16-4d98-4ba7-8d2a-3463ccf62bc0" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:28,279 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:26 GMT, Content-Length=735, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:28,280 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "b5fb8b16-4d98-4ba7-8d2a-3463ccf62bc0",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "mgiorda@devspark.com"
+  } ],
+  "callbackUrl" : "miCallbackurl.com",
+  "createdAt" : 1373916470649,
+  "createdBy" : "mgiorda@devspark.com",
+  "credentials" : [ {
+    "apiProducts" : [ ],
+    "attributes" : [ ],
+    "consumerKey" : "ENvAr7f59ygCQWxGZYZMNc0KgAHB1NZg",
+    "consumerSecret" : "VkDAAEWZf0J85LPz",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZKncooWVWCSqGXkV",
+  "lastModifiedAt" : 1375114282022,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "LatestApp",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-08-07 13:30:28,282 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:28,283 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/9d7afe57-f9fc-43dd-8056-359f2a1f61b2" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:28,532 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:26 GMT, Content-Length=864, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:28,532 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "9d7afe57-f9fc-43dd-8056-359f2a1f61b2",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "mgiorda@devspark.com"
+  } ],
+  "callbackUrl" : "miCallbackurl.com",
+  "createdAt" : 1373982963361,
+  "createdBy" : "mgiorda@devspark.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "oandaproduct",
+      "status" : "approved"
+    } ],
+    "attributes" : [ {
+      "name" : "region",
+      "value" : "north"
+    } ],
+    "consumerKey" : "WFiKqkGI3LLkBsa0gAULnVEkYGr8YPMT",
+    "consumerSecret" : "HwSGeQyGOrwhdwgX",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZKncooWVWCSqGXkV",
+  "lastModifiedAt" : 1375114278092,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "OandaApp",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-08-07 13:30:28,535 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:28,536 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/a1876eba-553b-4f02-96bd-6a771301c996" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:28,791 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:26 GMT, Content-Length=809, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:28,792 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "a1876eba-553b-4f02-96bd-6a771301c996",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "mgiorda@devspark.com"
+  } ],
+  "callbackUrl" : "miCallbackurl.com",
+  "createdAt" : 1373471491031,
+  "createdBy" : "mgiorda@devspark.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "emptyproduct",
+      "status" : "pending"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "l5JnPn6ZH4QMUOwKbiLmm126nVYdHHsW",
+    "consumerSecret" : "MuM3ZyvonRCtpck3",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZKncooWVWCSqGXkV",
+  "lastModifiedAt" : 1375114280743,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "MyNewNewApp",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-08-07 13:30:28,794 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:28,795 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/9fda72d2-b3fe-4047-9b39-e184c6e94f21" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:29,026 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:27 GMT, Content-Length=812, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:29,027 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "9fda72d2-b3fe-4047-9b39-e184c6e94f21",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "mgiorda@devspark.com"
+  } ],
+  "callbackUrl" : "miCallbackurl.com",
+  "createdAt" : 1374616417843,
+  "createdBy" : "mgiorda@devspark.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "oauthprod",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "fuUN8Ajm8BF7x10AvRIfaSGUnCSvl5bJ",
+    "consumerSecret" : "ChlAzBVjQSYMXGRr",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZKncooWVWCSqGXkV",
+  "lastModifiedAt" : 1375114275706,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "NewVeryBrokenApp",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-08-07 13:30:29,031 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-08-07 13:30:29,032 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apps/a7896679-37c2-4872-a0ce-ae56089a8de9" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:30:29,263 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 16:30:27 GMT, Content-Length=820, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 13:30:29,264 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "a7896679-37c2-4872-a0ce-ae56089a8de9",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "mgiorda@devspark.com"
+  } ],
+  "callbackUrl" : "miCallbackurl.com",
+  "createdAt" : 1373470566135,
+  "createdBy" : "mgiorda@devspark.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "emptyproduct",
+      "status" : "pending"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "YjDceJx0Rw6GjugzaqVI5TlDP1wdJ7ND",
+    "consumerSecret" : "lZxC13RHaRmRPsHX",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZKncooWVWCSqGXkV",
+  "lastModifiedAt" : 1375114283792,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "MyTestAppWithDeveloper",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-08-07 13:34:30,488 INFO - Invoking service method: 'ApigeeAPI.getDeveloperApp(String, String)'
+2013-08-07 13:34:30,519 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/developers/mgiorda%40devspark.com/apps/App+con+espacio" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:34:32,467 INFO - Response: 404, Headers: {Date=Wed, 07 Aug 2013 16:34:30 GMT, Content-Length=155, Connection=keep-alive, Content-Type=application/json, Server=Jetty(8.0.4.v20111024)}
+2013-08-07 13:41:54,029 INFO - Invoking service method: 'ApigeeAPI.getDeveloperApp(String, String)'
+2013-08-07 13:42:15,824 INFO - Invoking service method: 'ApigeeAPI.getDeveloperApp(String, String)'
+2013-08-07 13:42:15,852 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/developers/mgiorda%40devspark.com/apps/App%20con%20espacio" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 13:42:17,615 INFO - Response: 404, Headers: {Date=Wed, 07 Aug 2013 16:42:15 GMT, Content-Length=155, Connection=keep-alive, Content-Type=application/json, Server=Jetty(8.0.4.v20111024)}
+2013-08-07 13:43:08,955 INFO - Invoking service method: 'ApigeeAPI.getDeveloperApp(String, String)'
+2013-08-07 13:47:22,287 INFO - Invoking service method: 'ApigeeAPI.getDeveloperApp(String, String)'
+2013-08-07 14:20:10,623 INFO - Invoking service method: 'ApigeeAPI.getDeveloperApp(String, String)'
+2013-08-07 14:20:58,977 INFO - Invoking service method: 'ApigeeAPI.getDeveloperApp(String, String)'
+2013-08-07 14:20:59,004 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/developers/mgiorda%40devspark.com/apps/App%20con%20espacio" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 14:21:01,324 INFO - Response: 404, Headers: {Date=Wed, 07 Aug 2013 17:20:59 GMT, Content-Length=155, Connection=keep-alive, Content-Type=application/json, Server=Jetty(8.0.4.v20111024)}
+2013-08-07 14:23:14,757 INFO - Invoking service method: 'ApigeeAPI.getDeveloper(String)'
+2013-08-07 14:23:14,783 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/developers/mgiorda%40devspark.com" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 14:23:16,651 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 17:23:14 GMT, Content-Length=942, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 14:23:16,657 INFO - Parsing json: '{
+  "apps" : [ "MyNewApp", "OAuthApp", "NewVeryBrokenApp", "MyUltimateNewApp", "newDevApp", "MyTestApp2", "App-con-espacio", "OandaApp", "testapp", "NewBrokenApp", "MyNewNewApp", "UltimateApp", "LatestApp", "MyTestApp", "Broken", "NotEmptyApp", "MyTestAppWithDeveloper", "Rhapsody-Labs", "Rhapsody-Standard-Labs", "TestDeveloperApp" ],
+  "email" : "mgiorda@devspark.com",
+  "developerId" : "ZKncooWVWCSqGXkV",
+  "firstName" : "Mauro",
+  "lastName" : "Giorda",
+  "userName" : "mgiorda@devspark.com",
+  "organizationName" : "mgiorda",
+  "status" : "active",
+  "attributes" : [ {
+    "name" : "lastModified",
+    "value" : "2013-06-04 02:55 PM"
+  }, {
+    "name" : "lastModifier",
+    "value" : "mgiorda@devspark.com"
+  }, {
+    "name" : "creationDate",
+    "value" : "2013-06-04 02:55 PM"
+  } ],
+  "createdAt" : 1370357747655,
+  "createdBy" : "adminui@apigee.com",
+  "lastModifiedAt" : 1370357747655,
+  "lastModifiedBy" : "adminui@apigee.com"
+}'
+2013-08-07 14:23:16,697 INFO - Invoking service method: 'ApigeeAPI.getDeveloperApp(String, String)'
+2013-08-07 14:23:16,698 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/developers/mgiorda%40devspark.com/apps/App%20con%20espacio" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 14:23:16,977 INFO - Response: 404, Headers: {Date=Wed, 07 Aug 2013 17:23:15 GMT, Content-Length=155, Connection=keep-alive, Content-Type=application/json, Server=Jetty(8.0.4.v20111024)}
+2013-08-07 14:24:22,986 INFO - Invoking service method: 'ApigeeAPI.getDeveloperApp(String, String)'
+2013-08-07 14:24:23,013 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/developers/mgiorda%40devspark.com/apps/App-con-espacio" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 14:24:25,383 INFO - Response: 200, Headers: {Date=Wed, 07 Aug 2013 17:24:23 GMT, Content-Length=742, Connection=keep-alive, Content-Type=application/json}
+2013-08-07 14:24:25,386 INFO - Parsing json: '{
+  "accessType" : "",
+  "appFamily" : "default",
+  "appId" : "e66a86b8-6d15-4066-80bf-891eb9d866a6",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "App con espacio"
+  }, {
+    "name" : "Notes"
+  } ],
+  "callbackUrl" : "www.callback.com",
+  "createdAt" : 1375138366892,
+  "createdBy" : "mgiorda@devspark.com",
+  "credentials" : [ {
+    "apiProducts" : [ ],
+    "attributes" : [ ],
+    "consumerKey" : "9tYz1Zl0EfTGyRpqh1w8LUxmNAQCdOZ5",
+    "consumerSecret" : "D1ZcA0XKnHEtGNE6",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZKncooWVWCSqGXkV",
+  "lastModifiedAt" : 1375138366892,
+  "lastModifiedBy" : "mgiorda@devspark.com",
+  "name" : "App-con-espacio",
+  "scopes" : [ ],
+  "status" : "approved"
+}'

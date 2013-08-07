@@ -49,7 +49,7 @@ public final class PathParamsUtil {
 		String value = params.get(parameterName);
 		String urlEncodedValue;
 		try {
-			urlEncodedValue = URLEncoder.encode(value, "UTF-8");
+			urlEncodedValue = URLEncoder.encode(value, "UTF-8").replaceAll("\\+", "%20");
 		} catch (UnsupportedEncodingException e) {
 			throw new IllegalStateException(String.format("Couldn't url encode value '%s' for parameter named '%s'", value, parameterName), e);
 		}
