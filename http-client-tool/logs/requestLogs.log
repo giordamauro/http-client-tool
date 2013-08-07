@@ -7820,3 +7820,22 @@
   "scopes" : [ ],
   "status" : "approved"
 }'
+2013-08-07 14:55:45,283 INFO - Invoking service method: 'ApigeeAPI.editDeveloperAppKey(String, String, String, String)'
+2013-08-07 14:55:45,313 INFO - curl -k -v -X POST "https://api.enterprise.apigee.com/v1/organizations/ecollege/developers/mgiorda%40apigee.com/apps/NewBrokenApp/keys/cfed90570890b0635ccc8b97072c86c3?action=revoke" -u mgiorda@apigee.com:1234321Nomejodas
+2013-08-07 14:55:47,362 INFO - Response: 404, Headers: {Date=Wed, 07 Aug 2013 17:55:45 GMT, Content-Length=168, Connection=keep-alive, Content-Type=application/json, Server=Jetty(8.0.4.v20111024)}
+2013-08-07 14:56:05,898 INFO - Invoking service method: 'ApigeeAPI.editDeveloperAppKey(String, String, String, String)'
+2013-08-07 14:56:05,928 INFO - curl -k -v -X POST "https://api.enterprise.apigee.com/v1/organizations/mgiorda/developers/mgiorda%40devspark.com/apps/NewBrokenApp/keys/cfed90570890b0635ccc8b97072c86c3?action=revoke" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 14:56:07,454 INFO - Response: 404, Headers: {Date=Wed, 07 Aug 2013 17:56:05 GMT, Content-Length=137, Connection=keep-alive, Content-Type=application/json, Server=Jetty(8.0.4.v20111024)}
+2013-08-07 14:56:20,420 INFO - Invoking service method: 'ApigeeAPI.editDeveloperAppKey(String, String, String, String)'
+2013-08-07 14:56:20,449 INFO - curl -k -v -X POST "https://api.enterprise.apigee.com/v1/organizations/mgiorda/developers/mgiorda%40devspark.com/apps/NewBrokenApp/keys/cfed90570890b0635ccc8b97072c86c3?action=approbe" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 14:56:21,944 INFO - Response: 500, Headers: {Date=Wed, 07 Aug 2013 17:56:20 GMT, Content-Length=179, Connection=keep-alive, Content-Type=application/json, Server=Jetty(8.0.4.v20111024)}
+2013-08-07 14:58:01,676 INFO - Invoking service method: 'ApigeeAPI.editDeveloperAppKey(String, String, String, String)'
+2013-08-07 14:58:01,705 INFO - curl -k -v -X POST "https://api.enterprise.apigee.com/v1/organizations/mgiorda/developers/mgiorda%40devspark.com/apps/NewBrokenApp/keys/NL17oxnaPYcu4LaW5DmLuyuhEzRkMKvA?action=revoke" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 14:58:03,743 INFO - Response: 204, Headers: {Date=Wed, 07 Aug 2013 17:58:01 GMT, Content-length=0, Connection=keep-alive, Content-Type=*/*}
+2013-08-07 14:59:27,328 INFO - Invoking service method: 'ApigeeAPI.editDeveloperAppKey(String, String, String, String)'
+2013-08-07 14:59:27,357 INFO - curl -k -v -X POST "https://api.enterprise.apigee.com/v1/organizations/mgiorda/developers/mgiorda%40devspark.com/apps/NewBrokenApp/keys/NL17oxnaPYcu4LaW5DmLuyuhEzRkMKvA?action=aprove" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 14:59:29,384 INFO - Response: 500, Headers: {Date=Wed, 07 Aug 2013 17:59:27 GMT, Content-Length=179, Connection=keep-alive, Content-Type=application/json, Server=Jetty(8.0.4.v20111024)}
+2013-08-07 14:59:37,666 INFO - Invoking service method: 'ApigeeAPI.editDeveloperAppKey(String, String, String, String)'
+2013-08-07 14:59:37,694 INFO - curl -k -v -X POST "https://api.enterprise.apigee.com/v1/organizations/mgiorda/developers/mgiorda%40devspark.com/apps/NewBrokenApp/keys/NL17oxnaPYcu4LaW5DmLuyuhEzRkMKvA?action=approve" -u mgiorda@devspark.com:1234321Nomejodas
+2013-08-07 14:59:39,195 INFO - Response: 204, Headers: {Date=Wed, 07 Aug 2013 17:59:37 GMT, Content-length=0, Connection=keep-alive, Content-Type=*/*}
+2013-08-07 14:59:39,196 INFO - Parsing json: ''

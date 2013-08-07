@@ -51,7 +51,10 @@ public class HttpResponseImpl implements HttpResponse {
 
 	public String getStringContent() {
 		try {
-			String content = EntityUtils.toString(response.getEntity());
+			String content = "";
+			if (response.getEntity() != null) {
+				content = EntityUtils.toString(response.getEntity());
+			}
 			if (!isSuccessful()) {
 				if (content == null || content.equals("")) {
 					content = response.getStatusLine().getReasonPhrase();

@@ -4,6 +4,7 @@ import java.io.InputStream;
 import java.util.List;
 
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -62,4 +63,9 @@ public interface ApigeeAPI {
 	@Path("/apis/{api}/revisions/{revision}")
 	@Produces(MediaType.APPLICATION_OCTET_STREAM)
 	InputStream getApiBundle(@PathParam("api") String api, @PathParam("revision") String revision, @QueryParam("format") String format);
+
+	@POST
+	@Path("/developers/{developer}/apps/{app}/keys/{consumerKey}")
+	@Produces(MediaType.APPLICATION_JSON)
+	String editDeveloperAppKey(@PathParam("developer") String developer, @PathParam("app") String app, @PathParam("consumerKey") String consumerKey, @QueryParam("action") String action);
 }
