@@ -3,6 +3,8 @@ package com.apigee;
 import java.io.InputStream;
 import java.util.List;
 
+import javax.ws.rs.Consumes;
+import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -68,4 +70,12 @@ public interface ApigeeAPI {
 	@Path("/developers/{developer}/apps/{app}/keys/{consumerKey}")
 	@Produces(MediaType.APPLICATION_JSON)
 	String editDeveloperAppKey(@PathParam("developer") String developer, @PathParam("app") String app, @PathParam("consumerKey") String consumerKey, @QueryParam("action") String action);
+
+	// TODO NOT done yet -> test
+	@POST
+	@Path("/apis")
+	@Consumes(MediaType.APPLICATION_OCTET_STREAM)
+	@Produces(MediaType.APPLICATION_JSON)
+	String importApiProxy(@QueryParam("action") String action, @QueryParam("name") String proxyName, @FormParam("payload") InputStream proxyZip);
+
 }
