@@ -7,14 +7,13 @@ import com.apigee.ApigeeAPI;
 import com.apigee.model.ApiProduct;
 import com.util.ApiGeeUtil;
 
-public class GetApiProductsForProxy {
+public class GetApiProductsWithEmptyEnvironments {
 
 	public static void main(String[] args) {
 
 		final String organization = "ecollege";
 		final String username = "mgiorda@apigee.com";
 		final String password = "1234321Nomejodas";
-		final String proxyName = "Push-Notification-Registration7";
 
 		ApigeeAPI publicApi = ApiGeeUtil.getPublicApi(organization, username, password);
 
@@ -24,11 +23,9 @@ public class GetApiProductsForProxy {
 
 		for (String apiProduct : apiProducts) {
 			ApiProduct apiProductInfo = publicApi.getApiProduct(apiProduct);
-			List<String> proxies = apiProductInfo.getProxies();
-			for (String proxy : proxies) {
-				if (proxy.equalsIgnoreCase(proxyName)) {
-					products.add(apiProduct);
-				}
+			List<String> environments = apiProductInfo.getEnvironments();
+			if (environments.size() == 0) {
+				products.add(apiProduct);
 			}
 
 		}

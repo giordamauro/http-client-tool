@@ -26,7 +26,7 @@ public class DownloadBundleScript {
 
 		System.out.println(lastRev);
 
-		InputStream bundle = publicApi.getApiBundle(apiName, String.valueOf(lastRev), ApiGeeUtil.BUNDLE_FORMAT);
+		InputStream bundle = publicApi.getApiBundle(apiName, lastRev, ApiGeeUtil.BUNDLE_FORMAT);
 
 		FileUtils.streamToFile(bundle, apiName + ".zip");
 

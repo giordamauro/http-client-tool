@@ -62,9 +62,13 @@ public interface ApigeeAPI {
 	Api getApiRevisions(@PathParam("api") String api);
 
 	@GET
+	@Path("/apis/{api}/revisions/{revision}/deployments")
+	String getApiRevisionDeployments(@PathParam("api") String api, @PathParam("revision") int revision);
+
+	@GET
 	@Path("/apis/{api}/revisions/{revision}")
 	@Produces(MediaType.APPLICATION_OCTET_STREAM)
-	InputStream getApiBundle(@PathParam("api") String api, @PathParam("revision") String revision, @QueryParam("format") String format);
+	InputStream getApiBundle(@PathParam("api") String api, @PathParam("revision") int revision, @QueryParam("format") String format);
 
 	@POST
 	@Path("/developers/{developer}/apps/{app}/keys/{consumerKey}")
