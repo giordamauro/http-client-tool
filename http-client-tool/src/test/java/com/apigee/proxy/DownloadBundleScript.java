@@ -4,7 +4,7 @@ import java.io.InputStream;
 import java.util.List;
 
 import com.apigee.ApigeeAPI;
-import com.apigee.model.Api;
+import com.apigee.model.ApiRevision;
 import com.util.ApiGeeUtil;
 import com.util.FileUtils;
 
@@ -19,7 +19,7 @@ public class DownloadBundleScript {
 
 		ApigeeAPI publicApi = ApiGeeUtil.getPublicApi(organization, username, password);
 
-		Api api = publicApi.getApiRevisions(apiName);
+		ApiRevision api = publicApi.getApiRevisions(apiName);
 
 		List<Integer> revisions = api.getRevision();
 		int lastRev = revisions.get(revisions.size() - 1);

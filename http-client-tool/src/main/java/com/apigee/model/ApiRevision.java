@@ -2,7 +2,7 @@ package com.apigee.model;
 
 import java.util.List;
 
-public class Api {
+public class ApiRevision {
 
 	private String name;
 

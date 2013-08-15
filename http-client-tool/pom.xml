@@ -14,7 +14,7 @@
 		<jdom.version>1.1</jdom.version>
 
 		<maven.compiler.version>2.3.2</maven.compiler.version>
-	
+
 	</properties>
 
 	<dependencies>
@@ -48,6 +48,7 @@
 			<artifactId>jdom</artifactId>
 			<version>${jdom.version}</version>
 		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -63,4 +64,5 @@
 			</plugin>
 		</plugins>
 	</build>
+
 </project>

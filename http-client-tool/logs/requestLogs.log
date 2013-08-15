@@ -10520,3 +10520,129 @@
   "proxies" : [ "DEV-pi-login" ],
   "scopes" : [ ]
 }'
+2013-08-15 12:48:44,359 INFO - file unzip : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\test\apiproxy\policies\JavaScript-1.xml
+2013-08-15 12:48:44,394 INFO - file unzip : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\test\apiproxy\targets\paloAlto.xml
+2013-08-15 12:48:44,395 INFO - file unzip : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\test\apiproxy\targets\default.xml
+2013-08-15 12:48:44,396 INFO - file unzip : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\test\apiproxy\proxies\default.xml
+2013-08-15 12:48:44,397 INFO - file unzip : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\test\apiproxy\emiliano-api.xml
+2013-08-15 12:48:44,398 INFO - file unzip : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\test\apiproxy\resources\jsc\redirect.js
+2013-08-15 12:48:44,403 INFO - Done
+2013-08-15 12:49:31,226 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\test\apiproxy\policies\JavaScript-1.xml
+2013-08-15 12:49:31,228 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\test\apiproxy\targets\paloAlto.xml
+2013-08-15 12:49:31,228 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\test\apiproxy\targets\default.xml
+2013-08-15 12:49:31,228 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\test\apiproxy\proxies\default.xml
+2013-08-15 12:49:31,229 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\test\apiproxy\emiliano-api.xml
+2013-08-15 12:49:31,229 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\test\apiproxy\resources\jsc\redirect.js
+2013-08-15 12:49:31,230 INFO - Done
+2013-08-15 12:53:29,641 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\policies\JavaScript-1.xml
+2013-08-15 12:53:29,643 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\paloAlto.xml
+2013-08-15 12:53:29,644 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\default.xml
+2013-08-15 12:53:29,644 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\proxies\default.xml
+2013-08-15 12:53:29,645 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\emiliano-api.xml
+2013-08-15 12:53:29,645 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\resources\jsc\redirect.js
+2013-08-15 12:53:29,647 INFO - Done
+2013-08-15 12:55:14,856 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\policies\JavaScript-1.xml
+2013-08-15 12:55:14,858 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\paloAlto.xml
+2013-08-15 12:55:14,859 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\default.xml
+2013-08-15 12:55:14,859 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\proxies\default.xml
+2013-08-15 12:55:14,859 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\emiliano-api.xml
+2013-08-15 12:55:14,860 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\resources\jsc\redirect.js
+2013-08-15 12:55:14,861 INFO - Done
+2013-08-15 13:17:51,589 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\policies\JavaScript-1.xml
+2013-08-15 13:17:51,591 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\paloAlto.xml
+2013-08-15 13:17:51,591 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\default.xml
+2013-08-15 13:17:51,592 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\proxies\default.xml
+2013-08-15 13:17:51,592 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\emiliano-api.xml
+2013-08-15 13:17:51,592 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\resources\jsc\redirect.js
+2013-08-15 13:17:51,593 INFO - Done
+2013-08-15 13:18:34,921 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\policies\JavaScript-1.xml
+2013-08-15 13:18:34,923 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\paloAlto.xml
+2013-08-15 13:18:34,923 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\default.xml
+2013-08-15 13:18:34,923 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\proxies\default.xml
+2013-08-15 13:18:34,924 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\emiliano-api.xml
+2013-08-15 13:18:34,924 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\resources\jsc\redirect.js
+2013-08-15 13:18:34,925 INFO - Done
+2013-08-15 13:46:29,329 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\policies\JavaScript-1.xml
+2013-08-15 13:46:29,331 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\paloAlto.xml
+2013-08-15 13:46:29,331 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\default.xml
+2013-08-15 13:46:29,332 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\proxies\default.xml
+2013-08-15 13:46:29,332 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\emiliano-api.xml
+2013-08-15 13:46:29,332 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\resources\jsc\redirect.js
+2013-08-15 13:46:29,333 INFO - Done
+2013-08-15 13:48:25,714 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\policies\JavaScript-1.xml
+2013-08-15 13:48:25,717 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\paloAlto.xml
+2013-08-15 13:48:25,717 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\default.xml
+2013-08-15 13:48:25,717 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\proxies\default.xml
+2013-08-15 13:48:25,718 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\emiliano-api.xml
+2013-08-15 13:48:25,718 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\resources\jsc\redirect.js
+2013-08-15 13:48:25,719 INFO - Done
+2013-08-15 13:48:48,473 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\policies\JavaScript-1.xml
+2013-08-15 13:48:48,475 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\paloAlto.xml
+2013-08-15 13:48:48,476 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\default.xml
+2013-08-15 13:48:48,476 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\proxies\default.xml
+2013-08-15 13:48:48,476 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\emiliano-api.xml
+2013-08-15 13:48:48,477 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\resources\jsc\redirect.js
+2013-08-15 13:48:48,478 INFO - Done
+2013-08-15 13:54:07,735 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\policies\JavaScript-1.xml
+2013-08-15 13:54:07,737 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\paloAlto.xml
+2013-08-15 13:54:07,737 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\default.xml
+2013-08-15 13:54:07,738 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\proxies\default.xml
+2013-08-15 13:54:07,738 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\emiliano-api.xml
+2013-08-15 13:54:07,738 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\resources\jsc\redirect.js
+2013-08-15 13:54:07,739 INFO - Done
+2013-08-15 13:55:11,020 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\policies\JavaScript-1.xml
+2013-08-15 13:55:11,022 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\paloAlto.xml
+2013-08-15 13:55:11,023 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\default.xml
+2013-08-15 13:55:11,023 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\proxies\default.xml
+2013-08-15 13:55:11,023 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\emiliano-api.xml
+2013-08-15 13:55:11,024 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\resources\jsc\redirect.js
+2013-08-15 13:55:11,026 INFO - Done
+2013-08-15 13:55:21,020 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\policies\JavaScript-1.xml
+2013-08-15 13:55:21,022 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\paloAlto.xml
+2013-08-15 13:55:21,023 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\default.xml
+2013-08-15 13:55:21,023 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\proxies\default.xml
+2013-08-15 13:55:21,023 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\emiliano-api.xml
+2013-08-15 13:55:21,024 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\resources\jsc\redirect.js
+2013-08-15 13:55:21,025 INFO - Done
+2013-08-15 13:58:08,478 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\policies\JavaScript-1.xml
+2013-08-15 13:58:08,480 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\paloAlto.xml
+2013-08-15 13:58:08,480 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\default.xml
+2013-08-15 13:58:08,481 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\proxies\default.xml
+2013-08-15 13:58:08,481 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\emiliano-api.xml
+2013-08-15 13:58:08,481 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\resources\jsc\redirect.js
+2013-08-15 13:58:08,482 INFO - Done
+2013-08-15 13:58:46,955 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\policies\JavaScript-1.xml
+2013-08-15 13:58:46,957 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\paloAlto.xml
+2013-08-15 13:58:46,957 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\default.xml
+2013-08-15 13:58:46,957 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\proxies\default.xml
+2013-08-15 13:58:46,958 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\emiliano-api.xml
+2013-08-15 13:58:46,958 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\resources\jsc\redirect.js
+2013-08-15 13:58:46,959 INFO - Done
+2013-08-15 13:59:15,575 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\policies\JavaScript-1.xml
+2013-08-15 13:59:15,577 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\paloAlto.xml
+2013-08-15 13:59:15,577 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\default.xml
+2013-08-15 13:59:15,577 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\proxies\default.xml
+2013-08-15 13:59:15,578 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\emiliano-api.xml
+2013-08-15 13:59:15,578 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\resources\jsc\redirect.js
+2013-08-15 13:59:15,579 INFO - Done
+2013-08-15 19:19:21,736 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\policies\JavaScript-1.xml
+2013-08-15 19:19:21,738 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\paloAlto.xml
+2013-08-15 19:19:21,738 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\default.xml
+2013-08-15 19:19:21,739 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\proxies\default.xml
+2013-08-15 19:19:21,740 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\emiliano-api.xml
+2013-08-15 19:19:21,740 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\resources\jsc\redirect.js
+2013-08-15 19:19:21,741 INFO - Done
+2013-08-15 19:19:47,397 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\policies\JavaScript-1.xml
+2013-08-15 19:19:47,400 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\paloAlto.xml
+2013-08-15 19:19:47,400 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\default.xml
+2013-08-15 19:19:47,400 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\proxies\default.xml
+2013-08-15 19:19:47,402 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\emiliano-api.xml
+2013-08-15 19:19:47,402 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\resources\jsc\redirect.js
+2013-08-15 19:19:47,403 INFO - Done
+2013-08-15 19:20:20,348 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\policies\JavaScript-1.xml
+2013-08-15 19:20:20,350 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\paloAlto.xml
+2013-08-15 19:20:20,351 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\targets\default.xml
+2013-08-15 19:20:20,351 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\proxies\default.xml
+2013-08-15 19:20:20,352 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\emiliano-api.xml
+2013-08-15 19:20:20,353 INFO - UnZiping file : E:\Dev\workspace\git\http-client-tool.first\http-client-tool\.\temp\apiproxy\resources\jsc\redirect.js
+2013-08-15 19:20:20,354 INFO - Done

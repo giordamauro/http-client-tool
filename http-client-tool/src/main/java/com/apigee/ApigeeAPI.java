@@ -13,8 +13,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
-import com.apigee.model.Api;
 import com.apigee.model.ApiProduct;
+import com.apigee.model.ApiProxy;
+import com.apigee.model.ApiRevision;
 import com.apigee.model.Developer;
 import com.apigee.model.DeveloperApp;
 
@@ -57,9 +58,19 @@ public interface ApigeeAPI {
 	DeveloperApp getDeveloperApp(@PathParam("developer") String developer, @PathParam("app") String app);
 
 	@GET
+	@Path("/apis")
+	@Produces(MediaType.APPLICATION_JSON)
+	List<String> getApiProxies();
+
+	@GET
 	@Path("/apis/{api}")
 	@Produces(MediaType.APPLICATION_JSON)
-	Api getApiRevisions(@PathParam("api") String api);
+	ApiRevision getApiRevisions(@PathParam("api") String api);
+
+	@GET
+	@Path("/apis/{api}/revisions/{revision}")
+	@Produces(MediaType.APPLICATION_JSON)
+	ApiProxy getApiProxyRevision(@PathParam("api") String api, @PathParam("revision") int revision);
 
 	@GET
 	@Path("/apis/{api}/revisions/{revision}/deployments")
