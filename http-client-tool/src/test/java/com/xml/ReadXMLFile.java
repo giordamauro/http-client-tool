@@ -1,6 +1,5 @@
 package com.xml;
 
-import java.io.File;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -9,9 +8,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.jdom.Document;
 import org.jdom.Element;
-import org.jdom.input.SAXBuilder;
+
+import com.util.XmlUtils;
 
 public class ReadXMLFile {
 
@@ -61,9 +60,9 @@ public class ReadXMLFile {
 	public static void main(String[] args) {
 
 		String filePath = "c:\\xmlFile.xml";
-		Element rootNode = getRootelement(filePath);
+		Element rootNode = XmlUtils.getRootelement(filePath);
 
-		List<Element> points = getChildren(rootNode, "Point");
+		List<Element> points = XmlUtils.getChildren(rootNode, "Point");
 
 		List<Timestamp> timeStamps = new ArrayList<Timestamp>();
 
@@ -110,7 +109,7 @@ public class ReadXMLFile {
 
 		Map<String, String> map = new HashMap<String, String>();
 
-		List<Element> properties = getChildren(info, "Property");
+		List<Element> properties = XmlUtils.getChildren(info, "Property");
 		for (Element property : properties) {
 			String name = property.getAttributeValue("name");
 			String value = property.getValue();
@@ -118,25 +117,5 @@ public class ReadXMLFile {
 			map.put(name, value);
 		}
 		return map;
-	}
-
-	private static Element getRootelement(String file) {
-		SAXBuilder builder = new SAXBuilder();
-		try {
-			File xmlFile = new File(file);
-			Document document = (Document) builder.build(xmlFile);
-			Element rootNode = document.getRootElement();
-			return rootNode;
-		} catch (Exception e) {
-			throw new IllegalStateException(e);
-		}
-	}
-
-	private static List<Element> getChildren(Element element, String name) {
-
-		@SuppressWarnings("unchecked")
-		List<Element> list = (List<Element>) element.getChildren(name);
-
-		return list;
 	}
 }

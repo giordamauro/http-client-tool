@@ -26,7 +26,7 @@ public class ZipUtils {
 
 		File folder = new File(outputFolder);
 		if (folder.exists()) {
-			folder.delete();
+			FileUtils.deleteFolder(folder);
 		}
 		folder.mkdir();
 

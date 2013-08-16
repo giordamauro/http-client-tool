@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.bundle.model.policy.Policy;
 import com.util.BundleUtils;
 import com.util.ZipUtils;
 
@@ -15,10 +16,13 @@ public class Bundle {
 
 	private final Map<String, TargetEndpoint> targets;
 
-	private Bundle(ApiProxy apiProxy, Map<String, ProxyEndpoint> proxies, Map<String, TargetEndpoint> targets) {
+	private final Map<String, Policy> policies;
+
+	private Bundle(ApiProxy apiProxy, Map<String, ProxyEndpoint> proxies, Map<String, TargetEndpoint> targets, Map<String, Policy> policies) {
 		this.apiProxy = apiProxy;
 		this.proxies = proxies;
 		this.targets = targets;
+		this.policies = policies;
 	}
 
 	public static Bundle loadFromZip(String zipFilePath) {
@@ -30,7 +34,7 @@ public class Bundle {
 
 		List<String> proxyEndpoints = apiProxy.getProxyEndpoints();
 		for (String proxyEndpoint : proxyEndpoints) {
-			ProxyEndpoint endpoint = BundleUtils.getProxyEndpoint(proxyEndpoint + ".xml");
+			ProxyEndpoint endpoint = BundleUtils.getProxyEndpoint(proxyEndpoint);
 			proxies.put(proxyEndpoint, endpoint);
 		}
 
@@ -38,11 +42,21 @@ public class Bundle {
 
 		List<String> targetEndpoints = apiProxy.getTargetEndpoints();
 		for (String targetEndpoint : targetEndpoints) {
-			TargetEndpoint endpoint = BundleUtils.getTargetEndpoint(targetEndpoint + ".xml");
+			TargetEndpoint endpoint = BundleUtils.getTargetEndpoint(targetEndpoint);
 			targets.put(targetEndpoint, endpoint);
 		}
 
-		Bundle bundle = new Bundle(apiProxy, proxies, targets);
+		Map<String, Policy> policies = new HashMap<String, Policy>();
+
+		List<String> policiesList = apiProxy.getPolicies();
+		for (String policy : policiesList) {
+			Class<Policy> policyType = BundleUtils.getPolicyType(policy);
+			Policy thePolicy = BundleUtils.getPolicy(policy, policyType);
+			thePolicy.setType(policyType);
+			policies.put(policy, thePolicy);
+		}
+
+		Bundle bundle = new Bundle(apiProxy, proxies, targets, policies);
 
 		return bundle;
 	}
@@ -57,5 +71,20 @@ public class Bundle {
 
 	public Map<String, TargetEndpoint> getTargets() {
 		return targets;
+	}
+
+	public Map<String, Policy> getPolicies() {
+		return policies;
+	}
+
+	public <T extends Policy> T getPolicy(String name) {
+		if (!policies.containsKey(name)) {
+			throw new IllegalStateException(String.format("Policy named '%s' does not exist in the bundle", name));
+		}
+
+		@SuppressWarnings("unchecked")
+		T policy = (T) policies.get(name);
+
+		return policy;
 	}
 }

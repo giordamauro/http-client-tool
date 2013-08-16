@@ -8,6 +8,7 @@ public class BundleTest {
 		Bundle bundle = Bundle.loadFromZip("api-proxy.zip");
 
 		System.out.println(bundle.getApiProxy().getDisplayName());
+
 	}
 
 }
