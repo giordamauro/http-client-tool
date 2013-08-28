@@ -4965,3 +4965,312 @@
 * Closing connection #0
 * SSLv3, TLS alert, Client hello (1):
 } [data not shown]
+2013-08-28 16:22:03,749 INFO - Excecuting command : 'curl -k -v https://api.enterprise.apigee.com/v1/o/mgiorda/environments/test -u mgiorda@apigee.com:1234321Nomejodas'
+2013-08-28 16:22:05,541 INFO - 
+* About to connect() to api.enterprise.apigee.com port 443 (#0)
+*   Trying 54.236.78.41...   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0connected
+* Connected to api.enterprise.apigee.com (54.236.78.41) port 443 (#0)
+* SSLv3, TLS handshake, Client hello (1):
+} [data not shown]
+* SSLv3, TLS handshake, Server hello (2):
+{ [data not shown]
+* SSLv3, TLS handshake, CERT (11):
+{ [data not shown]
+* SSLv3, TLS handshake, Server finished (14):
+{ [data not shown]
+* SSLv3, TLS handshake, Client key exchange (16):
+} [data not shown]
+* SSLv3, TLS change cipher, Client hello (1):
+} [data not shown]
+* SSLv3, TLS handshake, Finished (20):
+} [data not shown]
+* SSLv3, TLS change cipher, Client hello (1):
+{ [data not shown]
+* SSLv3, TLS handshake, Finished (20):
+{ [data not shown]
+* SSL connection using AES256-SHA
+* Server certificate:
+* 	 subject: C=US; ST=California; L=Palo Alto; O=Apigee Corporation; OU=Apigee; CN=api.enterprise.apigee.com
+* 	 start date: 2012-10-25 00:00:00 GMT
+* 	 expire date: 2014-01-18 23:59:59 GMT
+* 	 subjectAltName: api.enterprise.apigee.com matched
+* 	 issuer: C=US; O=Thawte, Inc.; CN=Thawte SSL CA
+* 	 SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+* Server auth using Basic with user 'mgiorda@apigee.com'
+> GET /v1/o/mgiorda/environments/test HTTP/1.1
+
+> Authorization: Basic bWdpb3JkYUBhcGlnZWUuY29tOjEyMzQzMjFOb21lam9kYXM=
+
+> User-Agent: curl/7.21.7 (amd64-pc-win32) libcurl/7.21.7 OpenSSL/0.9.8r zlib/1.2.5
+
+> Host: api.enterprise.apigee.com
+
+> Accept: */*
+
+> 
+
+
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0< HTTP/1.1 200 OK
+
+< Content-Type: application/json
+
+< Date: Wed, 28 Aug 2013 19:22:01 GMT
+
+< Content-Length: 859
+
+< Connection: keep-alive
+
+< 
+
+{ [data not shown]
+
+100   859  100   859    0     0    487      0  0:00:01  0:00:01 --:--:--   966{
+  "createdAt" : 1370288737693,
+  "createdBy" : "noreply_admin@apigee.com",
+  "lastModifiedAt" : 1370288737693,
+  "lastModifiedBy" : "noreply_admin@apigee.com",
+  "name" : "test",
+  "properties" : {
+    "property" : [ {
+      "name" : "samplingTables",
+      "value" : "1=one"
+    }, {
+      "name" : "factExecutionStatsUpdateInterval",
+      "value" : "3600000"
+    }, {
+      "name" : "samplingInterval",
+      "value" : "60000"
+    }, {
+      "name" : "schema",
+      "value" : "mgiorda"
+    }, {
+      "name" : "noOfHrsBackToCollectFactStats",
+      "value" : "1"
+    }, {
+      "name" : "aggregationinterval",
+      "value" : "300000"
+    }, {
+      "name" : "useSampling",
+      "value" : "0"
+    }, {
+      "name" : "samplingAlgo",
+      "value" : "reservoir_sampler"
+    }, {
+      "name" : "samplingThreshold",
+      "value" : "100000"
+    } ]
+  }
+}
+* Connection #0 to host api.enterprise.apigee.com left intact
+* Closing connection #0
+* SSLv3, TLS alert, Client hello (1):
+} [data not shown]
+2013-08-28 16:23:02,502 INFO - Excecuting command : 'curl -k -v https://api.enterprise.apigee.com/v1/o/mgiorda/environments/test -u mgiorda@apigee.com:1234321Nomejodas'
+2013-08-28 16:23:03,934 INFO - 
+* About to connect() to api.enterprise.apigee.com port 443 (#0)
+*   Trying 107.23.24.79...   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0connected
+* Connected to api.enterprise.apigee.com (107.23.24.79) port 443 (#0)
+* SSLv3, TLS handshake, Client hello (1):
+} [data not shown]
+* SSLv3, TLS handshake, Server hello (2):
+{ [data not shown]
+* SSLv3, TLS handshake, CERT (11):
+{ [data not shown]
+* SSLv3, TLS handshake, Server finished (14):
+{ [data not shown]
+* SSLv3, TLS handshake, Client key exchange (16):
+} [data not shown]
+* SSLv3, TLS change cipher, Client hello (1):
+} [data not shown]
+* SSLv3, TLS handshake, Finished (20):
+} [data not shown]
+* SSLv3, TLS change cipher, Client hello (1):
+{ [data not shown]
+* SSLv3, TLS handshake, Finished (20):
+{ [data not shown]
+* SSL connection using AES256-SHA
+* Server certificate:
+* 	 subject: C=US; ST=California; L=Palo Alto; O=Apigee Corporation; OU=Apigee; CN=api.enterprise.apigee.com
+* 	 start date: 2012-10-25 00:00:00 GMT
+* 	 expire date: 2014-01-18 23:59:59 GMT
+* 	 subjectAltName: api.enterprise.apigee.com matched
+* 	 issuer: C=US; O=Thawte, Inc.; CN=Thawte SSL CA
+* 	 SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+* Server auth using Basic with user 'mgiorda@apigee.com'
+> GET /v1/o/mgiorda/environments/test HTTP/1.1
+
+> Authorization: Basic bWdpb3JkYUBhcGlnZWUuY29tOjEyMzQzMjFOb21lam9kYXM=
+
+> User-Agent: curl/7.21.7 (amd64-pc-win32) libcurl/7.21.7 OpenSSL/0.9.8r zlib/1.2.5
+
+> Host: api.enterprise.apigee.com
+
+> Accept: */*
+
+> 
+
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0< HTTP/1.1 200 OK
+
+< Content-Type: application/json
+
+< Date: Wed, 28 Aug 2013 19:23:00 GMT
+
+< Content-Length: 859
+
+< Connection: keep-alive
+
+< 
+
+{ [data not shown]
+
+100   859  100   859    0     0    611      0  0:00:01  0:00:01 --:--:--   724{
+  "createdAt" : 1370288737693,
+  "createdBy" : "noreply_admin@apigee.com",
+  "lastModifiedAt" : 1370288737693,
+  "lastModifiedBy" : "noreply_admin@apigee.com",
+  "name" : "test",
+  "properties" : {
+    "property" : [ {
+      "name" : "samplingTables",
+      "value" : "1=one"
+    }, {
+      "name" : "factExecutionStatsUpdateInterval",
+      "value" : "3600000"
+    }, {
+      "name" : "samplingInterval",
+      "value" : "60000"
+    }, {
+      "name" : "schema",
+      "value" : "mgiorda"
+    }, {
+      "name" : "noOfHrsBackToCollectFactStats",
+      "value" : "1"
+    }, {
+      "name" : "aggregationinterval",
+      "value" : "300000"
+    }, {
+      "name" : "useSampling",
+      "value" : "0"
+    }, {
+      "name" : "samplingAlgo",
+      "value" : "reservoir_sampler"
+    }, {
+      "name" : "samplingThreshold",
+      "value" : "100000"
+    } ]
+  }
+}
+* Connection #0 to host api.enterprise.apigee.com left intact
+* Closing connection #0
+* SSLv3, TLS alert, Client hello (1):
+} [data not shown]
+2013-08-28 16:23:03,937 INFO - Excecuting command : 'curl -k -v https://api.enterprise.apigee.com/v1/o/mgiorda/environments/test -u mgiorda@apigee.com:1234321Nomejodas'
+2013-08-28 16:23:05,547 INFO - 
+* About to connect() to api.enterprise.apigee.com port 443 (#0)
+*   Trying 54.236.78.41...   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0connected
+* Connected to api.enterprise.apigee.com (54.236.78.41) port 443 (#0)
+* SSLv3, TLS handshake, Client hello (1):
+} [data not shown]
+* SSLv3, TLS handshake, Server hello (2):
+{ [data not shown]
+* SSLv3, TLS handshake, CERT (11):
+{ [data not shown]
+* SSLv3, TLS handshake, Server finished (14):
+{ [data not shown]
+* SSLv3, TLS handshake, Client key exchange (16):
+} [data not shown]
+* SSLv3, TLS change cipher, Client hello (1):
+} [data not shown]
+* SSLv3, TLS handshake, Finished (20):
+} [data not shown]
+* SSLv3, TLS change cipher, Client hello (1):
+{ [data not shown]
+* SSLv3, TLS handshake, Finished (20):
+{ [data not shown]
+* SSL connection using AES256-SHA
+* Server certificate:
+* 	 subject: C=US; ST=California; L=Palo Alto; O=Apigee Corporation; OU=Apigee; CN=api.enterprise.apigee.com
+* 	 start date: 2012-10-25 00:00:00 GMT
+* 	 expire date: 2014-01-18 23:59:59 GMT
+* 	 subjectAltName: api.enterprise.apigee.com matched
+* 	 issuer: C=US; O=Thawte, Inc.; CN=Thawte SSL CA
+* 	 SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+* Server auth using Basic with user 'mgiorda@apigee.com'
+> GET /v1/o/mgiorda/environments/test HTTP/1.1
+
+> Authorization: Basic bWdpb3JkYUBhcGlnZWUuY29tOjEyMzQzMjFOb21lam9kYXM=
+
+> User-Agent: curl/7.21.7 (amd64-pc-win32) libcurl/7.21.7 OpenSSL/0.9.8r zlib/1.2.5
+
+> Host: api.enterprise.apigee.com
+
+> Accept: */*
+
+> 
+
+
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0< HTTP/1.1 200 OK
+
+< Content-Type: application/json
+
+< Date: Wed, 28 Aug 2013 19:23:01 GMT
+
+< Content-Length: 859
+
+< Connection: keep-alive
+
+< 
+
+{ [data not shown]
+
+100   859  100   859    0     0    545      0  0:00:01  0:00:01 --:--:--  1038{
+  "createdAt" : 1370288737693,
+  "createdBy" : "noreply_admin@apigee.com",
+  "lastModifiedAt" : 1370288737693,
+  "lastModifiedBy" : "noreply_admin@apigee.com",
+  "name" : "test",
+  "properties" : {
+    "property" : [ {
+      "name" : "samplingTables",
+      "value" : "1=one"
+    }, {
+      "name" : "factExecutionStatsUpdateInterval",
+      "value" : "3600000"
+    }, {
+      "name" : "samplingInterval",
+      "value" : "60000"
+    }, {
+      "name" : "schema",
+      "value" : "mgiorda"
+    }, {
+      "name" : "noOfHrsBackToCollectFactStats",
+      "value" : "1"
+    }, {
+      "name" : "aggregationinterval",
+      "value" : "300000"
+    }, {
+      "name" : "useSampling",
+      "value" : "0"
+    }, {
+      "name" : "samplingAlgo",
+      "value" : "reservoir_sampler"
+    }, {
+      "name" : "samplingThreshold",
+      "value" : "100000"
+    } ]
+  }
+}
+* Connection #0 to host api.enterprise.apigee.com left intact
+* Closing connection #0
+* SSLv3, TLS alert, Client hello (1):
+} [data not shown]

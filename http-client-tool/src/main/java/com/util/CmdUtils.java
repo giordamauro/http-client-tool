@@ -24,7 +24,7 @@ public final class CmdUtils {
 		}
 
 		if (!options.isEmpty()) {
-			command.substring(0, command.length() - 1);
+			command = command.substring(0, command.length() - 1);
 		}
 
 		return execCommand(command);
