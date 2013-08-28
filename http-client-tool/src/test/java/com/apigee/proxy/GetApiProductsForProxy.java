@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.apigee.ApigeeAPI;
+import com.apigee.Dev;
+import com.apigee.Org;
 import com.apigee.model.ApiProduct;
 import com.util.ApiGeeUtil;
 
@@ -11,10 +13,10 @@ public class GetApiProductsForProxy {
 
 	public static void main(String[] args) {
 
-		final String organization = "ecollege";
-		final String username = "mgiorda@apigee.com";
+		final String organization = Org.STAPLES;
+		final String username = Dev.MGIORDA_APIGEE;
 		final String password = "1234321Nomejodas";
-		final String proxyName = "Push-Notification-Registration7";
+		final String proxyName = "StaplesEasyOpenAPI";
 
 		ApigeeAPI publicApi = ApiGeeUtil.getPublicApi(organization, username, password);
 
@@ -27,7 +29,7 @@ public class GetApiProductsForProxy {
 			List<String> proxies = apiProductInfo.getProxies();
 			for (String proxy : proxies) {
 				if (proxy.equalsIgnoreCase(proxyName)) {
-					products.add(apiProduct);
+					products.add(apiProductInfo.getName());
 				}
 			}
 

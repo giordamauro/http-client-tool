@@ -13,6 +13,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
+import com.apigee.model.AccessToken;
 import com.apigee.model.ApiProduct;
 import com.apigee.model.ApiProxy;
 import com.apigee.model.ApiRevision;
@@ -85,6 +86,11 @@ public interface ApigeeAPI {
 	@Path("/developers/{developer}/apps/{app}/keys/{consumerKey}")
 	@Produces(MediaType.APPLICATION_JSON)
 	String editDeveloperAppKey(@PathParam("developer") String developer, @PathParam("app") String app, @PathParam("consumerKey") String consumerKey, @QueryParam("action") String action);
+
+	@GET
+	@Path("/oauth2/accesstokens/{access_token}")
+	@Produces(MediaType.APPLICATION_JSON)
+	AccessToken getAccessToken(@PathParam("access_token") String accessToken);
 
 	// TODO NOT done yet -> test
 	@POST

@@ -1,12 +1,14 @@
 package com.apigee.proxy;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import com.apigee.ApigeeAPI;
+import com.apigee.Dev;
+import com.apigee.Org;
 import com.apigee.model.Credential;
 import com.apigee.model.DeveloperApp;
 import com.apigee.model.DeveloperAppApiProduct;
@@ -16,15 +18,13 @@ public class GetAppsForApiProduct {
 
 	public static void main(String[] args) {
 
-		final String organization = "mgiorda";
-		final String username = "mgiorda@devspark.com";
+		final String organization = Org.STAPLES;
+		final String username = Dev.MGIORDA_APIGEE;
 		final String password = "1234321Nomejodas";
-		// final List<String> apiProducts = Arrays.asList(new String[] {
-		// "beta2", "NORMAL1", "Normal", "betapm", "testapiproduct", "sandbox",
-		// "Silver", "Gold", "piapi_poc_2", "piapi_poc_4", "HIGH",
-		// "MI_Unlimited", "rumbapi", "Beta" });
+		final List<String> apiProducts = Arrays.asList(new String[] { "Gold", "All Gold", "test_catalog_only", "Silver", "Catalog Browse Silver", "Experimental" });
 
-		final List<String> apiProducts = Collections.singletonList("product_without_attribute");
+		// final List<String> apiProducts =
+		// Collections.singletonList("StaplesEasyOpenAPI");
 
 		ApigeeAPI publicApi = ApiGeeUtil.getPublicApi(organization, username, password);
 
