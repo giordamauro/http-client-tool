@@ -2,8 +2,12 @@ package com.http.tests;
 
 import java.util.List;
 
+import org.apache.http.client.HttpClient;
+import org.apache.http.impl.client.DefaultHttpClient;
+
 import com.google.gson.JsonObject;
 import com.http.impl.httpclient.BasicAuthHttpFactory;
+import com.http.impl.httpclient.HttpRequester;
 import com.http.model.HttpFactory;
 import com.http.model.HttpMethod;
 import com.http.model.HttpRequest;
@@ -15,11 +19,14 @@ public class GetDeveloperAppsTest {
 
 	public static void main(String[] args) {
 
-		final String organization = "mgiorda";
-		final String username = "mgiorda@devspark.com";
-		final String password = "1234321Nomejodas";
+		final String organization = "";
+		final String username = "";
+		final String password = "";
 
-		HttpFactory httpFactory = new BasicAuthHttpFactory(PublicApiPaths.API_GEE_HOST, username, password);
+		HttpClient defaultHttpClient = new DefaultHttpClient();
+		HttpRequester requester = new HttpRequester(defaultHttpClient);
+
+		HttpFactory httpFactory = new BasicAuthHttpFactory(requester, PublicApiPaths.API_GEE_HOST, username, password);
 		httpFactory.setPathParam("organization", organization);
 
 		HttpRequest devsRequest = httpFactory.newRequest(HttpMethod.GET, PublicApiPaths.DEVELOPERS_PATH);

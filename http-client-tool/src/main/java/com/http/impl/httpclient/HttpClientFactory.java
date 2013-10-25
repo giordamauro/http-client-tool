@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.http.client.HttpClient;
-import org.apache.http.impl.client.DefaultHttpClient;
 
 import com.http.model.FormRequest;
 import com.http.model.HttpFactory;
@@ -14,8 +13,6 @@ import com.http.model.QueryRequest;
 
 public class HttpClientFactory implements HttpFactory {
 
-	private static final DefaultHttpClient defaultHttpClient = new DefaultHttpClient();
-
 	private final HttpRequester requester;
 
 	private String hostPath;
@@ -24,26 +21,16 @@ public class HttpClientFactory implements HttpFactory {
 
 	private final Map<String, String> pathParams = new HashMap<String, String>();
 
-	public HttpClientFactory(String hostPath) {
-		this.requester = new HttpRequester(defaultHttpClient);
-		this.hostPath = hostPath;
-	}
-
-	public HttpClientFactory() {
-		this.requester = new HttpRequester(defaultHttpClient);
-		this.hostPath = null;
-	}
-
-	public HttpClientFactory(HttpClient httpClient, String host) {
-		if (httpClient == null) {
+	public HttpClientFactory(HttpRequester httpRequester, String host) {
+		if (httpRequester == null) {
 			throw new IllegalArgumentException("HttpClient cannot be null");
 		}
-		this.requester = new HttpRequester(httpClient);
+		this.requester = httpRequester;
 		this.hostPath = host;
 	}
 
-	public HttpClientFactory(HttpClient httpClient) {
-		this(httpClient, null);
+	public HttpClientFactory(HttpRequester httpRequester) {
+		this(httpRequester, null);
 	}
 
 	public <T extends HttpRequest> T newRequest(HttpMethod method, String path) {

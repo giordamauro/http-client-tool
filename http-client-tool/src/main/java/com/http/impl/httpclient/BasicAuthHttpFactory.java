@@ -6,13 +6,13 @@ public class BasicAuthHttpFactory extends HttpClientFactory {
 
 	private static final String AUTHORIZATION_HEADER = "Authorization";
 
-	public BasicAuthHttpFactory(String username, String password) {
-		super();
+	public BasicAuthHttpFactory(HttpRequester httpRequester, String username, String password) {
+		super(httpRequester);
 		setAuthorizationHeader(username, password);
 	}
 
-	public BasicAuthHttpFactory(String host, String username, String password) {
-		super(host);
+	public BasicAuthHttpFactory(HttpRequester httpRequester, String host, String username, String password) {
+		super(httpRequester, host);
 		setAuthorizationHeader(username, password);
 	}
 

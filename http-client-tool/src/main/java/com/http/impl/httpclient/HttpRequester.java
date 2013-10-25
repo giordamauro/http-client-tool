@@ -34,7 +34,7 @@ public class HttpRequester {
 
 	private final HttpClient httpClient;
 
-	HttpRequester(HttpClient httpClient) {
+	public HttpRequester(HttpClient httpClient) {
 		this.httpClient = httpClient;
 	}
 

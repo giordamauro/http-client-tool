@@ -33,6 +33,10 @@ public class FormRequestImpl extends QueryRequestImpl implements FormRequest {
 		this.setHeader(CONTENT_TYPE_HEADER, contentType);
 	}
 
+	public FormPayload getPayload() {
+		return payload;
+	}
+
 	@Override
 	public HttpResponse send() {
 		return requester.sendFormRequest(this, pathParams, queryParams, payload);
