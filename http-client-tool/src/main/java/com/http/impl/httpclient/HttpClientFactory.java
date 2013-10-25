@@ -21,16 +21,16 @@ public class HttpClientFactory implements HttpFactory {
 
 	private final Map<String, String> pathParams = new HashMap<String, String>();
 
-	public HttpClientFactory(HttpRequester httpRequester, String host) {
-		if (httpRequester == null) {
+	public HttpClientFactory(HttpClient httpClient, String host) {
+		if (httpClient == null) {
 			throw new IllegalArgumentException("HttpClient cannot be null");
 		}
-		this.requester = httpRequester;
+		this.requester = new HttpRequester(httpClient);
 		this.hostPath = host;
 	}
 
-	public HttpClientFactory(HttpRequester httpRequester) {
-		this(httpRequester, null);
+	public HttpClientFactory(HttpClient httpClient) {
+		this(httpClient, null);
 	}
 
 	public <T extends HttpRequest> T newRequest(HttpMethod method, String path) {

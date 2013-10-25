@@ -66,12 +66,20 @@ public class QueryRequestImpl extends HttpRequestImpl implements QueryRequest {
 		return requester.sendQueryRequest(this, pathParams, queryBasedParams);
 	}
 
-	protected RequestParams getQueryBasedParams(RequestParams queryParams) {
+	public RequestParams getQueryBasedParams(RequestParams queryParams) {
 		RequestParams queryBasedParams = new RequestParams();
 		queryBasedParams.addAll(this.queryParams);
 		queryBasedParams.addAll(queryParams);
 
 		return queryBasedParams;
+	}
+
+	@Override
+	public RequestParams getQueryParams() {
+		RequestParams queryP = new RequestParams();
+		queryP.addAll(this.queryParams);
+
+		return queryP;
 	}
 
 }

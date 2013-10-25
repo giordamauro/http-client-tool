@@ -1,18 +1,19 @@
 package com.http.impl.httpclient;
 
 import org.apache.commons.codec.binary.Base64;
+import org.apache.http.client.HttpClient;
 
 public class BasicAuthHttpFactory extends HttpClientFactory {
 
 	private static final String AUTHORIZATION_HEADER = "Authorization";
 
-	public BasicAuthHttpFactory(HttpRequester httpRequester, String username, String password) {
-		super(httpRequester);
+	public BasicAuthHttpFactory(HttpClient httpClient, String username, String password) {
+		super(httpClient);
 		setAuthorizationHeader(username, password);
 	}
 
-	public BasicAuthHttpFactory(HttpRequester httpRequester, String host, String username, String password) {
-		super(httpRequester, host);
+	public BasicAuthHttpFactory(HttpClient httpClient, String host, String username, String password) {
+		super(httpClient, host);
 		setAuthorizationHeader(username, password);
 	}
 

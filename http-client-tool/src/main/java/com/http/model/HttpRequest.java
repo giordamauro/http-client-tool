@@ -1,6 +1,5 @@
 package com.http.model;
 
-import java.util.List;
 import java.util.Map;
 
 public interface HttpRequest {
@@ -9,7 +8,7 @@ public interface HttpRequest {
 
 	String getPath();
 
-	List<String> getPathParams();
+	Map<String, String> getPathParams();
 
 	void setHeader(String name, String value);
 

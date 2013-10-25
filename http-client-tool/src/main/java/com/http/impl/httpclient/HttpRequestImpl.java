@@ -2,7 +2,6 @@ package com.http.impl.httpclient;
 
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
@@ -11,7 +10,6 @@ import org.apache.http.client.methods.HttpRequestBase;
 import com.http.model.HttpMethod;
 import com.http.model.HttpRequest;
 import com.http.model.HttpResponse;
-import com.http.model.PathParamsUtil;
 
 public class HttpRequestImpl implements HttpRequest {
 
@@ -39,8 +37,8 @@ public class HttpRequestImpl implements HttpRequest {
 		return path;
 	}
 
-	public List<String> getPathParams() {
-		return PathParamsUtil.getPathParameters(path);
+	public Map<String, String> getPathParams() {
+		return pathParams;
 	}
 
 	public void setHeader(String name, String value) {

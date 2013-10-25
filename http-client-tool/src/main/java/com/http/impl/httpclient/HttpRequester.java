@@ -3,8 +3,6 @@ package com.http.impl.httpclient;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URI;
-import java.net.URLEncoder;
-import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
@@ -25,7 +23,7 @@ import com.http.model.FormPayload;
 import com.http.model.HttpMethod;
 import com.http.model.HttpRequest;
 import com.http.model.HttpResponse;
-import com.http.model.PathParamsUtil;
+import com.http.model.ParamsUtil;
 import com.http.model.PayloadType;
 import com.http.model.RawPayload;
 import com.http.model.RequestParams;
@@ -34,7 +32,7 @@ public class HttpRequester {
 
 	private final HttpClient httpClient;
 
-	public HttpRequester(HttpClient httpClient) {
+	HttpRequester(HttpClient httpClient) {
 		this.httpClient = httpClient;
 	}
 
@@ -45,10 +43,10 @@ public class HttpRequester {
 	public HttpRequestBase getRequest(HttpRequest request, Map<String, String> pathParams, RequestParams queryParams, FormPayload payload) {
 
 		HttpMethod method = request.getMethod();
-		String completePath = PathParamsUtil.replacePathParameters(request.getPath(), pathParams);
+		String completePath = ParamsUtil.replacePathParameters(request.getPath(), pathParams);
 
 		if (queryParams != null && !queryParams.isEmpty()) {
-			completePath += "?" + getUrlQueryParams(queryParams);
+			completePath += "?" + ParamsUtil.getUrlParams(queryParams);
 		}
 
 		HttpRequestBase httpRequest = getBaseRequestFromMethod(method, completePath);
@@ -62,8 +60,6 @@ public class HttpRequester {
 
 			setRequestPayload(method, httpRequest, payload);
 		}
-
-		CurlLogger.logRequest(request, completePath, pathParams);
 
 		return httpRequest;
 	}
@@ -82,8 +78,6 @@ public class HttpRequester {
 
 		org.apache.http.HttpResponse response = executeHttpRequest(httpRequest);
 		HttpResponse httpResponse = new HttpResponseImpl(response);
-
-		CurlLogger.logResponse(httpResponse);
 
 		return httpResponse;
 	}
@@ -129,28 +123,6 @@ public class HttpRequester {
 			throw new IllegalStateException(e);
 		}
 		return params;
-	}
-
-	private String getUrlQueryParams(RequestParams queryParams) {
-		try {
-
-			String urlQueryParams = "";
-			List<String> queryParameters = queryParams.getParameterKeys();
-			for (String queryParam : queryParameters) {
-				String urlKey = URLEncoder.encode(queryParam, "UTF-8");
-				List<String> values = queryParams.getParameterValues(queryParam);
-				for (String value : values) {
-					String urlValue = URLEncoder.encode(value, "UTF-8");
-					urlQueryParams += urlKey + "=" + urlValue + "&";
-				}
-			}
-			String fixedQueryUrl = urlQueryParams.substring(0, urlQueryParams.length() - 1);
-
-			return fixedQueryUrl;
-
-		} catch (UnsupportedEncodingException e) {
-			throw new IllegalStateException(e);
-		}
 	}
 
 	private HttpRequestBase getBaseRequestFromMethod(HttpMethod method, String basePath) {

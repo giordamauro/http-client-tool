@@ -6,12 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public final class PathParamsUtil {
+public final class ParamsUtil {
 
 	private static final String PARAMETER_PREFIX = "{";
 	private static final String PARAMETER_SUFIX = "}";
 
-	private PathParamsUtil() {
+	private ParamsUtil() {
 	}
 
 	public static List<String> getPathParameters(String path) {
@@ -54,5 +54,27 @@ public final class PathParamsUtil {
 			throw new IllegalStateException(String.format("Couldn't url encode value '%s' for parameter named '%s'", value, parameterName), e);
 		}
 		return urlEncodedValue;
+	}
+
+	public static String getUrlParams(RequestParams queryParams) {
+		try {
+
+			String urlQueryParams = "";
+			List<String> queryParameters = queryParams.getParameterKeys();
+			for (String queryParam : queryParameters) {
+				String urlKey = URLEncoder.encode(queryParam, "UTF-8");
+				List<String> values = queryParams.getParameterValues(queryParam);
+				for (String value : values) {
+					String urlValue = URLEncoder.encode(value, "UTF-8");
+					urlQueryParams += urlKey + "=" + urlValue + "&";
+				}
+			}
+			String fixedQueryUrl = urlQueryParams.substring(0, urlQueryParams.length() - 1);
+
+			return fixedQueryUrl;
+
+		} catch (UnsupportedEncodingException e) {
+			throw new IllegalStateException(e);
+		}
 	}
 }

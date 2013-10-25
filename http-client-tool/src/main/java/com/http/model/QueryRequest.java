@@ -8,6 +8,8 @@ public interface QueryRequest extends HttpRequest {
 
 	void addQueryParams(RequestParams queryParams);
 
+	RequestParams getQueryParams();
+
 	HttpResponse send(Map<String, String> pathParams, RequestParams queryParams);
 
 	HttpResponse send(RequestParams queryParams);

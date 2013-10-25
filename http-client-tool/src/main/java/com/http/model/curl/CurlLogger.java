@@ -1,4 +1,4 @@
-package com.http.impl.httpclient;
+package com.http.model.curl;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Map;
@@ -13,9 +13,11 @@ import com.http.model.FormRequest;
 import com.http.model.HttpMethod;
 import com.http.model.HttpRequest;
 import com.http.model.HttpResponse;
-import com.http.model.PathParamsUtil;
+import com.http.model.ParamsUtil;
 import com.http.model.PayloadType;
+import com.http.model.QueryRequest;
 import com.http.model.RawPayload;
+import com.http.model.RequestParams;
 
 public final class CurlLogger {
 
@@ -26,8 +28,22 @@ public final class CurlLogger {
 	private CurlLogger() {
 	}
 
-	public static <T extends HttpRequest> void logRequest(T request, String completePath, Map<String, String> pathParams) {
-		String curlPath = PathParamsUtil.replacePathParameters(completePath, pathParams);
+	public static <T extends HttpRequest> void logRequest(T request) {
+		String completePath = request.getPath();
+
+		Map<String, String> pathParams = request.getPathParams();
+		String curlPath = ParamsUtil.replacePathParameters(completePath, pathParams);
+
+		if (request.getMethod() != HttpMethod.OPTIONS) {
+
+			QueryRequest queryRequest = (QueryRequest) request;
+			RequestParams queryParams = queryRequest.getQueryParams();
+
+			if (queryParams != null && !queryParams.isEmpty()) {
+				completePath += "?" + ParamsUtil.getUrlParams(queryParams);
+			}
+
+		}
 
 		String curlAuthorization = getCurlAuthorization(request.getHeaders());
 		String curlHeaders = getAuthorizationHeaders(request.getHeaders());
